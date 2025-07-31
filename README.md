@@ -1,16 +1,33 @@
-# nvim-cross-off
-Very minimal neovim plugin that:
-- toggles strikes through for current line of text if in normal mode
+# strike-through.nvim
+
+Very minimal neovim plugin that is used to toggle the strike through effect on text.
+
+It achieves this by adding a long stroke overlay unicode (U+0336) after each character
+
+- toggles strikes through effect for current line of text if in normal mode
 - toggles strikes through for selected text if in visual mode
 
-E.g:
-hello world -> h̶e̶l̶l̶o̶ ̶w̶o̶r̶l̶d̶
+## Showcase
 
-s̶t̶r̶i̶k̶e̶d̶ ̶t̶h̶r̶o̶u̶g̶h̶ ̶t̶e̶x̶t̶ -> striked through text
+If in normal mode, toggles strike through on current line of text (toggle is triggered using default keymap of <leader>co)
+TODO - add video
 
-If selected text or current line has some struck through text and some normal text, converts entire line into normal non struck through text
+If in visual mode, toggles strike through on selected text
+TODO - add video
 
-Functions and mappings:
+> [!INFO]
+> If selected text or current line has some strike-through text and some normal-text, converts entire line into non strike through text
+TODO - add video
+
+## Installation
+
+```
+require("lazy").setup({
+    "justamanpop/strike-through.nvim"
+})
+```
+
+## Functions and mappings:
+
 - Exposes two functions ToggleStrikeThrough (to toggle current line in normal mode) and ToggleStrikeThroughVisual (to toggle visual selection)
-- Sets up a default mapping of <leader><C-o> (think cross off) for ToggleStrikeThrough in normal mode and ToggleStrikeThroughVisual in visual and block visual mode
-
+- Sets up a default mapping of "<leader>co" (co =  cross off) for ToggleStrikeThrough in normal mode and ToggleStrikeThroughVisual in visual and block visual mode
