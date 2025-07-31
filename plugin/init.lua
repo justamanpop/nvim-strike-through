@@ -72,7 +72,7 @@ local toggleStrikeThroughVisual = function()
 		local no_strike_through_text = string.gsub(selected_text, strike_through_char, "")
 		-- since set_text needs table of lines, have to split
 		local no_strike_through_lines = stringSplit(no_strike_through_text, "\n")
-		vim.api.nvim_buf_set_text(0, start_row, start_col, end_row, end_col, no_strike_through_lines)
+		vim.api.nvim_buf_set_text(0, start_row, start_col, end_row, end_col + 2, no_strike_through_lines)
 	else
 		--replace each char with each char + strike through char, which gives strike out effect
 		local strike_through_text = string.gsub(selected_text, ".", "%1" .. strike_through_char)

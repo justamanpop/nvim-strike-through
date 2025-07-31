@@ -39,4 +39,4 @@ require("lazy").setup({
 ## Functions and mappings:
 
 - Exposes two functions ToggleStrikeThrough (to toggle current line in normal mode) and ToggleStrikeThroughVisual (to toggle visual selection)
-- Sets up a default mapping of "<leader>co" (co =  cross off) for ToggleStrikeThrough in normal mode and ToggleStrikeThroughVisual in visual and block visual mode
+- Sets up a default mapping of "\<leader\>co" (co =  cross off) for ToggleStrikeThrough in normal mode and ToggleStrikeThroughVisual in visual and block visual mode
