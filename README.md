@@ -9,15 +9,24 @@ It achieves this by adding a long stroke overlay unicode (U+0336) after each cha
 
 ## Showcase
 
-If in normal mode, toggles strike through on current line of text (toggle is triggered using default keymap of <leader>co)
-TODO - add video
+If in normal mode, toggles strike through on current line of text (toggle is triggered using default keymap of \<leader\>co)
 
-If in visual mode, toggles strike through on selected text
-TODO - add video
+https://github.com/user-attachments/assets/a71114b3-3028-4f46-905f-546645475c35
 
-> [!INFO]
-> If selected text or current line has some strike-through text and some normal-text, converts entire line into non strike through text
-TODO - add video
+
+If in visual mode, toggles strike through on selected text (does not work as expected for visual block mode)
+
+
+https://github.com/user-attachments/assets/962e7ae5-12b0-4497-9c1e-30e986651836
+
+
+
+
+If selected text or current line has some strike-through text and some normal-text, converts entire line into non strike through text
+
+
+https://github.com/user-attachments/assets/b43eaa03-a890-4b43-9c2e-fc3317b0c824
+
 
 ## Installation
 
